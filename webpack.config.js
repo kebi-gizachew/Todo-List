@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin"); //for serving c
  //for working with .env
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/js/index.js",
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"), //create a dist file in the root folder used for deployment and building
@@ -40,7 +40,7 @@ module.exports = {
       template: "./src/index.html",
     }),
     new MiniCssExtractPlugin({
-      filename: "style.css",
+      filename: "./css/style.css",
     }),
     
   ],
