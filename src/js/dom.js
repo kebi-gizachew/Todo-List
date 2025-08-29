@@ -1,4 +1,6 @@
 const { getStoredNotes, saveNotes } = require("./storage.js");
+const { format } = require("date-fns");
+
 
 const initializeApp = () => {
   const notes = document.getElementById("notes");
@@ -68,7 +70,7 @@ const initializeApp = () => {
       div.id = i.id;
       div.innerHTML = `
         <p><strong>Title: </strong>${i.title}</p>
-        <p><strong>Date: </strong>${i.date}</p>
+        <p><strong>Date: </strong>${format(new Date(i.date),"MMM dd, yyyy")}</p>
         <p><strong>Description: </strong>${i.description}</p>
         <button class="edit">Edit</button>   
         <button class="delete">Delete</button> 

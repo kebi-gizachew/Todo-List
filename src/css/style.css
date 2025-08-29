@@ -56,10 +56,10 @@ section{
     overflow-x:hidden;
 }
 #info{
-width:100%;
-height:100%;
-background:transparent;
-margin:auto;
+    width:100%;
+    height:100%;
+    background:transparent;
+    margin:auto;
 }
 #info label{
     display:block;
@@ -83,7 +83,7 @@ margin:auto;
 }
 #info button{
     margin:auto;
-margin-left:130px;
+    margin-left:130px;
     border:1px solid black;
     background:linear-gradient(90deg,#9002b0,#6e16f3);
     text-align:center;
@@ -107,7 +107,7 @@ margin-left:130px;
     border:1px solid black;
     background:linear-gradient(90deg,#9002b0,#6e16f3);
     text-align:center;
-    font-size:50px;
+    font-size:40px;
     color:white;
     border-radius:14.56px;
     font-family:"Italianno", cursive;
