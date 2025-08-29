@@ -1,6 +1,7 @@
 const path = require("path"); //importin the "path" library for assigning path of locations with node
 const HtmlWebpackPlugin = require("html-webpack-plugin"); //importing for bundling and serving the creatiion of index.html in dist
 const MiniCssExtractPlugin = require("mini-css-extract-plugin"); //for serving creation of style.css
+const Dotenv=require('dotenv-webpack');
  //for working with .env
 
 module.exports = {
@@ -42,6 +43,10 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "./css/style.css",
     }),
+    new Dotenv({
+      path: "./.env",
+      systemvars: true,
+    })
     
   ],
   mode: "development",
